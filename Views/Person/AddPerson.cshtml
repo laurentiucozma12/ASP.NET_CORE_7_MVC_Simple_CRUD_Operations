@@ -1,0 +1,16 @@
+﻿@model ASP.NET_CORE_7_MVC.Models.Domain.Person
+@{
+    // _Layout
+}
+
+<form>
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" type="text" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email</label>
+        <input asp-for="Email" type="email" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
