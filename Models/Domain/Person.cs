@@ -1,9 +1,14 @@
-﻿namespace ASP.NET_CORE_7_MVC.Models.Domain
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ASP.NET_CORE_7_MVC.Models.Domain
 {
     public class Person
     {
         public int Id { get; set; }
-        public string? Name { get; set; }
-        public string? Email { get; set; }
+        [Required]
+        public string Name { get; set; }
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
     }
 }
